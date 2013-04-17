@@ -141,12 +141,12 @@ var option = new SelectEle({
 	list_id : 'option-mon-list',
 	span_id : 'option-mon-text',
 	dropBtn_id : 'option-mon-btn',
-	parentNode : 'body',
-	attr : {},
+	parentNode : 'body', // 组件渲染的位置， 默认body
+	attr : {}, // 设置自定义的container属性
 	listItems : {
 		attr : {},
 		data : 'data-option',
-		options : [
+		options : [  //可以是functio，返回值是 数组
 			{ txt : '一月', value : 1 },
 			{ txt : '二月', value : 2 },
 			{ txt : '三月', value : 3 },
